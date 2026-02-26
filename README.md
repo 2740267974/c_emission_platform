@@ -1,16 +1,62 @@
-# c_emission_platform
+# Cement Production CO₂ Emission Calculator
 
-A new Flutter project.
+A Flutter-based cross-platform application for estimating CO₂ emissions (kg CO₂ per ton) in cement production.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Overview
 
-A few resources to get you started if this is your first Flutter project:
+This project is an engineering-oriented carbon emission calculation tool designed to estimate the carbon intensity of cement manufacturing.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Users input production-related parameters across multiple process stages, and the system calculates total CO₂ emissions per ton of cement.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Calculation Scope
+
+The emission model includes:
+
+- Raw material decomposition emissions  
+- Fuel combustion emissions  
+- Electricity consumption emissions  
+- Process-related energy usage  
+
+Final result is expressed as:
+
+> **kg CO₂ per ton of cement**
+
+---
+
+## Project Structure
+
+- `beans/` – Data models  
+- `common/` – Constants and shared logic  
+- `utils/` – Utility functions  
+- `work/` – Core calculation logic  
+- `main.dart` – Application entry and navigation  
+
+---
+
+## Tech Stack
+
+- Flutter  
+- Dart  
+- Material Design 3  
+- Cross-platform support (Android / iOS / Windows / Web)
+
+---
+
+## Purpose
+
+This project demonstrates:
+
+- Industrial carbon emission modeling  
+- Engineering-oriented application design  
+- Structured data organization  
+- Cross-platform Flutter development  
+
+---
+
+## License
+
+Private project – for technical demonstration purposes only.
