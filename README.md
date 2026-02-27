@@ -1,11 +1,27 @@
+# Cement Production CO₂ Emission Calculator
+
+A Flutter-based cross-platform application for estimating CO₂ emissions (kg CO₂ per ton) in cement production.
+
+---
+
+## Overview
+
+This project is an engineering-oriented carbon emission calculation tool designed to estimate the carbon intensity of cement manufacturing processes.
+
+Users input production-related parameters across multiple stages, and the system automatically calculates total CO₂ emissions per ton of cement, along with detailed breakdown results.
+
+The software is developed using Flutter to support cross-platform deployment (Android / iOS / Web / Windows).
+
 ---
 
 ## Application Interface Preview
 
-### 1️⃣ Main Interface
+### 1️⃣ Main Interface – Modular Input System
 
-The main interface provides a structured modular input system for cement production parameters.  
-Users can expand each section and input process-related data, including:
+The main interface adopts a structured modular design.  
+Users can expand each section and input process-related parameters for different stages of cement production.
+
+Included modules:
 
 - System configuration  
 - Production overview  
@@ -15,37 +31,87 @@ Users can expand each section and input process-related data, including:
 - Cement grinding  
 - Output results  
 
-The modular design ensures clarity, scalability, and engineering usability.
+This structure ensures clarity, scalability, and engineering usability.
 
-<p align="center">
-  <img src="assets/screenshots/home.png" width="300"/>
-</p>
+![Main Interface](assets/home.png)
 
 ---
 
-### 2️⃣ CO₂ Emission Calculation Results
+### 2️⃣ CO₂ Emission Result Page
 
-After completing parameter input, the software automatically calculates:
+After completing parameter input, the system automatically calculates:
 
 - Total CO₂ emissions (kg CO₂ / t cement)
 - Raw material decomposition emissions
 - Fuel combustion emissions
-- Electricity consumption
-- Detailed energy breakdown by process
+- Electricity consumption emissions
+- Process-level energy breakdown
 
-The results page clearly presents both total emissions and stage-level contributions, supporting transparent carbon accounting and process-level analysis.
+The result interface clearly presents both total emissions and stage-level contributions, supporting transparent carbon accounting and process analysis.
 
-<p align="center">
-  <img src="assets/screenshots/result.png" width="300"/>
-</p>
+![Calculation Result](assets/result.png)
 
 ---
 
-## Features Highlight
+## Calculation Scope
+
+The emission model includes:
+
+- Raw material decomposition emissions  
+- Fuel combustion emissions  
+- Electricity-related indirect emissions  
+- Process energy consumption  
+
+Final output:
+
+> **kg CO₂ per ton of cement**
+
+---
+
+## Project Structure
+
+lib/
+├── beans/ # Data models
+├── common/ # Constants and shared logic
+├── utils/ # Utility functions
+├── work/ # Core calculation logic
+└── main.dart # Application entry point
+
+
+---
+
+## Tech Stack
+
+- Flutter  
+- Dart  
+- Material Design 3  
+- Cross-platform deployment (Android / iOS / Windows / Web)
+
+---
+
+## Engineering Features
 
 - ✔ Modular industrial process modeling  
 - ✔ Automated CO₂ emission calculation  
-- ✔ Multi-stage emission breakdown  
-- ✔ Clear engineering-oriented UI design  
-- ✔ Cross-platform Flutter deployment  
+- ✔ Stage-level emission breakdown  
+- ✔ Structured engineering logic  
+- ✔ Clean UI design  
+- ✔ Cross-platform compatibility  
 
+---
+
+## Purpose
+
+This project demonstrates:
+
+- Industrial carbon emission modeling  
+- Engineering software development  
+- Structured data handling  
+- Applied sustainability computation  
+- Cross-platform Flutter application development  
+
+---
+
+## License
+
+Private project – for technical demonstration purposes only.
