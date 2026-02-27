@@ -68,17 +68,6 @@ Final output:
 
 ---
 
-## Project Structure
-
-lib/
-├── beans/ # Data models
-├── common/ # Constants and shared logic
-├── utils/ # Utility functions
-├── work/ # Core calculation logic
-└── main.dart # Application entry point
-
-
----
 
 ## Tech Stack
 
